@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; /* stack navbar and content vertically */
+        background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px 30px;
+        position: fixed; /* sticks to top */
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-start; /* left align items */
+        gap: 20px;
+        color: white;
+    }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .navbar a:hover {
+                color: #f8c291;
+            }
+
+    /* Content centered below navbar */
+    .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 540px;
+    }
+
+    /* Gradient button */
+    .btn-gradient {
+        background: linear-gradient(45deg, #ff6b6b, #f8c291);
+        border: none;
+        color: black;
+        padding:  20px 40px;
+        font-size: 24px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .btn-gradient:hover {
+            transform: scale(1.35);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+</style>
+
+@* <!-- Navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/fetchData/GetData">Fetch Data</a>
+    <a href="/About">About</a>
+</div> *@
+
+<!-- Page Content -->
+<div class="content">
+    <button id="fetchBtn" class="btn-gradient">Predict For A Match</button>
+</div>
+
+<script>
+    document.getElementById("fetchBtn").addEventListener("click", function () {
+        // fetch("/FetchData/CallFetchDataAsync")
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         console.log("Response: " + JSON.stringify(data));
+        //     });
+        window.location.href = "/FetchData/CallFetchDataAsync";
+    });
+</script>
