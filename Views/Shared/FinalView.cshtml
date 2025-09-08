@@ -1,0 +1,63 @@
+﻿@model Dota2WinPredictor.Models.PredictResponse
+
+@{
+    ViewData["Title"] = "Prediction Results";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Prediction Results</h2>
+
+    <div class="row">
+        <!-- Team A -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h4>Team A</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>Advantage:</strong> @string.Format("{0:P2}", Model.TeamAAdvantage)</p>
+                    <p><strong>Win Chance:</strong> @string.Format("{0:P2}", Model.TeamAWinChance)</p>
+
+
+                    <div class="row">
+                        @foreach (var hero in Model.TeamA)
+                        {
+                            <div class="col-6 col-md-4 mb-3 text-center">
+                                <img src="@hero.Icon"
+                                     alt="@hero.Name"
+                                     class="img-fluid rounded shadow-sm"
+                                     style="max-height:100px;" />
+                                <div>@hero.Name</div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team B -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-danger text-white">
+                    <h4>Team B</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>Win Chance:</strong> @string.Format("{0:P2}", Model.TeamBWinChance)</p>
+
+                    <div class="row">
+                        @foreach (var hero in Model.TeamB)
+                        {
+                            <div class="col-6 col-md-4 mb-3 text-center">
+                                <img src="@hero.Icon"
+                                     alt="@hero.Name"
+                                     class="img-fluid rounded shadow-sm"
+                                     style="max-height:100px;" />
+                                <div>@hero.Name</div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

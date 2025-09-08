@@ -14,5 +14,9 @@
         public int? WinCount { get; set; }
 
         public double? WinRate { get; set; }
+
+        public double? AdjustedWinRate { get; set; }
+
+        public double? LogOdds { get; set; }
     }
 }

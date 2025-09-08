@@ -6,6 +6,7 @@ namespace Dota2WinPredictor.Services
     public interface IDataService
     {
         Task<List<HeroDTO>> GetDataAsync();
+        Task<PredictResponse> PredictBayes(PredictRequest request);
     }
     public class DataService:  IDataService
     {
@@ -27,43 +28,66 @@ namespace Dota2WinPredictor.Services
             return result;
         }
 
-        //public async Task<PredictResponse> PredictBayes(PredictRequest request)
-        //{
-        //    var data = await _dataRepository.GetData(request);
+        public async Task<PredictResponse> PredictBayes(PredictRequest request)
+        {
+            var data = await _dataRepository.GetData(request);
 
-        //    var teamA = data
-        //        .Where(h => request.namesA.Contains(h.Name))
-        //        .ToList();
+            var teamA = data
+                .Where(h => request.namesA.Contains(h.Name))
+                .ToList();
 
-        //    var teamB = data
-        //        .Where(h => request.namesB.Contains(h.Name))
-        //        .ToList();
+            var teamB = data
+                .Where(h => request.namesB.Contains(h.Name))
+                .ToList();
 
-        //    double N = priorStrength;
+            double N = priorStrength;
 
-        //    double teamAScore = 0.0;
-        //    double teamBScore = 0.0;
+            double teamAScore = 0.0;
+            double teamBScore = 0.0;
 
-        //    foreach (var hero in teamA)
-        //    {
-        //        int games = (int)hero.PickCount;
-        //        double heroWinRate = (double)hero.WinRate;
+            foreach (var hero in teamA)
+            {
+                int games = (int)hero.PickCount;
+                double heroWinRate = (double)hero.WinRate;
 
-        //        double adjustedBayesianShrinkedWinRate = (games * heroWinRate + N * priorMean) / (games + N);
-        //        double strengthScore = Math.Log(adjustedBayesianShrinkedWinRate / (1 - adjustedBayesianShrinkedWinRate));
+                double adjustedBayesianShrinkedWinRate = (games * heroWinRate + N * priorMean) / (games + N);
+                double strengthScore = Math.Log(adjustedBayesianShrinkedWinRate / (1 - adjustedBayesianShrinkedWinRate));
+                hero.AdjustedWinRate = adjustedBayesianShrinkedWinRate;
+                hero.LogOdds = strengthScore;
 
-        //        teamAScore = teamAScore + strengthScore;
-        //        teamBScore = teamBScore + strengthScore;
+                teamAScore = teamAScore + strengthScore;
 
-        //        //h.AdjustedWinRate = adjusted;
-        //    }
+            }
 
-        //    double teamAdvantage = teamAScore - teamBScore;
-        //    double teamAWinChance = 1.0 / (1.0 + Math.Exp(-teamAdvantage));
-        //    double teamBWinChance = 1.0 - teamAWinChance;
+            foreach (var hero in teamB)
+            {
+                int games = (int)hero.PickCount;
+                double heroWinRate = (double)hero.WinRate;
 
+                double adjustedBayesianShrinkedWinRate = (games * heroWinRate + N * priorMean) / (games + N);
+                double strengthScore = Math.Log(adjustedBayesianShrinkedWinRate / (1 - adjustedBayesianShrinkedWinRate));
+                hero.AdjustedWinRate = adjustedBayesianShrinkedWinRate;
+                hero.LogOdds = strengthScore;
 
-        //}
+                teamBScore = teamBScore + strengthScore;
+
+            }
+
+            double teamAdvantage = teamAScore - teamBScore;
+            double teamAWinChance = 1.0 / (1.0 + Math.Exp(-teamAdvantage));
+            double teamBWinChance = 1.0 - teamAWinChance;
+
+            var response = new PredictResponse { 
+
+                    TeamA = teamA,
+                    TeamB = teamB,
+                    TeamAAdvantage = teamAdvantage,
+                    TeamAWinChance = teamAWinChance,
+                    TeamBWinChance = teamBWinChance
+                };
+            
+            return response;
+        }
 
     }
 }

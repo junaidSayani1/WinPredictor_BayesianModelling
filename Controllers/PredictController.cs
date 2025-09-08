@@ -21,10 +21,13 @@ namespace Dota2WinPredictor.Controllers
         }
 
         [HttpPost("Predict")]
-        public IActionResult Predict(PredictRequest request)
+        public async Task<IActionResult> Predict([FromBody] PredictRequest request)
         {
-            //var result = _dataService.PredictBayes(request);
-            return Json("");
+            if (request == null)
+                return BadRequest("Request body was null");
+
+            var result = await _dataService.PredictBayes(request);
+            return Json(result);
 
         }
     }

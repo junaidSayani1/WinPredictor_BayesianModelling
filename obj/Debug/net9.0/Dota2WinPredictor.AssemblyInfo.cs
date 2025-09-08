@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dota2WinPredictor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06a7981e6a938b3872c097256fbf4953d8202f81")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dota2WinPredictor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dota2WinPredictor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
