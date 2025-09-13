@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Dota2WinPredictor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\views\\shared\\finalview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|solutionrelative:views\\shared\\finalview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\controllers\\resultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|solutionrelative:controllers\\resultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\controllers\\predictcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|solutionrelative:controllers\\predictcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\views\\shared\\finalview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|solutionrelative:views\\shared\\finalview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\controllers\\fetchdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB0B57F7-2099-4914-ADB8-4BA5DAF4CC56}|Dota2WinPredictor.csproj|d:\\dota2winpredictor\\models\\predictrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,41 +86,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FinalView.cshtml",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Views\\Shared\\FinalView.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\FinalView.cshtml",
               "ToolTip": "D:\\Dota2WinPredictor\\Views\\Shared\\FinalView.cshtml",
               "RelativeToolTip": "Views\\Shared\\FinalView.cshtml",
-              "ViewState": "AgIAACIAAAAAAgAAAAAIwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvx0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-08T17:22:29.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T17:22:29.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ResultController.cs",
-              "DocumentMoniker": "D:\\Dota2WinPredictor\\Controllers\\ResultController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ResultController.cs",
-              "ToolTip": "D:\\Dota2WinPredictor\\Controllers\\ResultController.cs",
-              "RelativeToolTip": "Controllers\\ResultController.cs",
-              "ViewState": "AgIAAAMAAAA0ZmZmZmYkwBMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T17:20:15.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HeroesView.cshtml",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Views\\Shared\\HeroesView.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\HeroesView.cshtml",
@@ -128,12 +110,11 @@
               "RelativeToolTip": "Views\\Shared\\HeroesView.cshtml",
               "ViewState": "AgIAAMAAAAAANzMzMzMwwNIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T13:38:26.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T13:38:26.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PredictController.cs",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Controllers\\PredictController.cs",
               "RelativeDocumentMoniker": "Controllers\\PredictController.cs",
@@ -141,12 +122,11 @@
               "RelativeToolTip": "Controllers\\PredictController.cs",
               "ViewState": "AgIAAAUAAADY//////8hwAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T08:00:48.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T08:00:48.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -154,12 +134,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T10:52:20.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T10:52:20.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FetchData.cs",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Controllers\\FetchData.cs",
               "RelativeDocumentMoniker": "Controllers\\FetchData.cs",
@@ -167,8 +146,32 @@
               "RelativeToolTip": "Controllers\\FetchData.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T10:47:08.625Z",
+              "WhenOpened": "2025-09-06T10:47:08.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Dota2WinPredictor\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Dota2WinPredictor\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA4AAAAAMjMzMzMZwCkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T16:13:50.393Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResultController.cs",
+              "DocumentMoniker": "D:\\Dota2WinPredictor\\Controllers\\ResultController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResultController.cs",
+              "ToolTip": "D:\\Dota2WinPredictor\\Controllers\\ResultController.cs",
+              "RelativeToolTip": "Controllers\\ResultController.cs",
+              "ViewState": "AgIAAAMAAAA0ZmZmZmYkwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:20:15.243Z"
             },
             {
               "$type": "Document",
@@ -180,12 +183,11 @@
               "RelativeToolTip": "Models\\PredictRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T08:08:56.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T08:08:56.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DataService.cs",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Services\\DataService.cs",
               "RelativeDocumentMoniker": "Services\\DataService.cs",
@@ -193,8 +195,7 @@
               "RelativeToolTip": "Services\\DataService.cs",
               "ViewState": "AgIAABsAAABgzczMzMwqwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T12:24:21.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T12:24:21.344Z"
             },
             {
               "$type": "Document",
@@ -206,12 +207,11 @@
               "RelativeToolTip": "Models\\PredictResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T15:55:06.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T15:55:06.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DataRepository.cs",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Repositories\\DataRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\DataRepository.cs",
@@ -219,25 +219,11 @@
               "RelativeToolTip": "Repositories\\DataRepository.cs",
               "ViewState": "AgIAAE4AAAAAxszMzMwQwA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T15:55:53.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T15:55:53.887Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Dota2WinPredictor\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Dota2WinPredictor\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-08T16:13:50.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\Dota2WinPredictor\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -245,8 +231,7 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-08T16:13:53.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T16:13:53.345Z"
             },
             {
               "$type": "Document",
@@ -258,8 +243,7 @@
               "RelativeToolTip": "Models\\HeroDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T10:48:33.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T10:48:33.712Z"
             },
             {
               "$type": "Document",
@@ -271,8 +255,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAE8AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T12:04:20.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T12:04:20.001Z"
             },
             {
               "$type": "Document",
@@ -296,8 +279,7 @@
               "RelativeToolTip": "Models\\HeroDataResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T08:42:44.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T08:42:44.623Z"
             },
             {
               "$type": "Document",
